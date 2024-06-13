@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Creating Pizza Shop website.">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Assignment 2 | Pizza Ordering Form</title>
+        <!-- we can add our fonts here  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- here we added our CSS -->
+        <link rel="stylesheet" href="./Css/pizzafrom.css">
+    </head>
+<body lang="en"> <!--body tag open lang="en" demonstrates that language is english-->
+    <header><!--Header tag opened-->
+       <div> <!--div tag 1 open--> <!--LOGO-->
+                <a href="Assignment2.html"><img src="./Images/logo1.jpg" alt="logoimage"></a> <!--Logo image using anchor tag image is present inside assignment 2 folder -images -->
+        </div><!--div tag  2 closed-->
+            <nav> <!--nav tag opened-->
+                <!--Header List-->
+                <menu><!--menu tag opened-->
+                        <li><a href="#">HOME</a></li> <!--list tag 1 -->
+                        <li><a href="#my-form">MENU</a></li><!--list tag 2 -->
+                        <li><a href="#">COUPONS</a></li><!--list tag 3 -->
+                        <li><a href="#">FRANCAIS</a></li><!--list tag 4 -->
+                </menu><!--menu tag closed-->
+            </nav> <!--nav tag closed-->
+    </header>  <!--Header tag closed-->
+
+       <!-- our masthead --> <!--Content that is shown above the image-->
+                    <section class="masthead"><!--section tag 1 open-->
+                        <h1>Pizza Hut</h1><!--h1 tag 1-->
+                        <h2>Your's Favourite Pizza Brand</h2><!--h1 tag 2-->
+                    </section><!--section tag 2 closed-->
+
+     <!-- our main content -->
+     <main> <!--main tag opened-->
+        <section><!--section tag 2 opened-->
+            <h2>Enter your data in the Form</h2> <!--pizza data form-->
+            <div>
+                <!-- our form for getting data -->
+                <form action="somephpfile" method="post" enctype="multipart/form-data" id="my-form"><!--form action having post method having id in it-->
+                    <!-- inputs and labels for the form -->
+                    <label><b>Your Personal Details:</b></label> <!--label 1 asking for customer personal details-->
+                    <br><!--break tag 1-->
+                    <input type="text" name="first" placeholder="First Name" required> <!--input text field 1 asking for customer first name-->
+                    <br><!--break tag 2-->
+                    <input type="text" name="last" placeholder="Last Name" required><!--input text field 2 asking for customer last name-->
+                    <br><!--break tag 3-->
+                    <input type="tel" name="phone" placeholder="Phone number" required><!--input text field 3 asking for customer phonenumber-->
+                    <br><!--break tag 4-->
+                    <input type="email" name="email" placeholder="Email" required><!--input text field 4 asking for customer email-->
+                    <br><!--break tag 5-->
+                    <input type="text" name="address" placeholder="Address" required><!--input text field 5 asking for customer address-->
+                    <br> <!--break tag 6-->
+                    <hr><!--horizontal tag 1-->
+                    <label><b>Order Details:</b></label> <!--label 2 for order details-->
+                    <br> <!--break tag 7-->
+                    <label><b>Quantity of Pizza's:</b></label> <!--label 3 asking customer for pizza quantity-->
+                    <br><!--break tag 8-->
+                    <input type="number" name="quantity" min="1" max="10"> <!--input text field 6 with minimum 1 value and maximum 10-->
+                    <br><!--break tag 9-->
+                    <label><b>Size of pizza:</b></label><!--label 3 asking customer for pizza size-->
+                    <br><!--break tag 10-->
+                    <!-- giving options to select one of them -->
+                    <select><!--scrolling option will appear that will request customer to select one option-->
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Family Pack</option>
+                    </select>
+                    <br>
+                    <label><b>Choose Base:</b><br></label>
+                    <input type="radio" id="Thin_Crust" name="base" value="Thin Crust">
+                    <label for="Thin_Crust">Thin Crust</label>
+                    <br>
+                    <input type="radio" id="Multigrain" name="base" value="Multigrain">
+                    <label for="Multigrain">Multigrain</label>
+                    <br>
+                    <input type="radio" id="Neapolitan" name="base" value="Neapolitan">
+                    <label for="Neapolitan">Neapolitan</label>
+                    <br>
+                    <label><b>Please select Toppings:</b></label>
+                    <br>
+                    <input type="checkbox" id="topping1" name="topping1" value="topping1">
+                    <label for="topping1">Pepperoni</label>
+                    <br>
+                    <input type="checkbox" id="topping2" name="topping2" value="topping2">
+                    <label for="topping2">Mushrooms</label>
+                    <br>
+                    <input type="checkbox" id="topping3" name="topping3" value="topping3">
+                    <label for="topping3">Onions</label>
+                    <br>
+                    <input type="checkbox" id="topping4" name="topping4" value="topping4">
+                    <label for="topping4">Olives</label>
+                    <br>
+                    <input type="checkbox" id="topping5" name="topping5" value="topping5">
+                    <label for="topping5">Pineapple</label>
+                    <br>
+                    <input type="checkbox" id="topping6" name="topping6" value="topping6">
+                    <label for="topping6">Chicken</label>
+                    <br>
+                    <input type="checkbox" id="topping7" name="topping7" value="topping7">
+                    <label for="topping7">Jalapeños</label>
+                    <br>
+                    <label><b>Extra Cheese:</b><br></label>
+                    <input type="radio" id="cheese1" name="cheese" value="YES">
+                    <label for="cheese1">YES</label>
+                    <br>
+                    <input type="radio" id="cheese0" name="cheese" value="NO">
+                    <label for="cheese0">NO</label>
+                    <hr>
+                    <br>
+                    <!-- SUBMIT button -->
+                    <input id="submit" type="submit" value="PLACE ORDER" >
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <!-- images and 2 articles -->
+        <article>
+            <h3>Type1</h3>
+            <img src="./Images/pizza1.jpeg" alt="pizza-1" class="image1">
+            <img src="./Images/pizza2.jpeg" alt="pizza-2" class="image2">
+            </article>
+            <article>
+            <h3>Type2</h3>
+            <img src="./Images/pizza3.jpeg" alt="pizza-3" class="image3">
+            <img src="./Images/pizza4.jpeg" alt="pizza-4" class="image4">
+        </article>
+        <article>
+            <h3>Type3</h3>
+            <img src="./Images/pizza5.jpeg" alt="pizza-5" class="image5">
+            <img src="./Images/pizza6.png" alt="pizza-6" class="image6">
+        </article>
+    </aside>
+
+    <!-- at last footer -->
+    <footer>
+        <a href="Assignment2.html"></a>
+        <h6>Terms and conditions apply || @Copyright</h6>
+    </footer>
+</body>
+</html>
