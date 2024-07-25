@@ -1,0 +1,265 @@
+
+/* Properties that will apply to all the elements */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Londrina Solid", sans-serif;
+    text-decoration: none;
+}
+
+/* font property for movie name */
+.movieName{
+    font-family: "Knewave", system-ui;
+}
+
+/* to make all the headings center */
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+
+/* Flex utility */
+.flex{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+/* Coloring utilities */
+
+.font-white{
+    color: aliceblue;
+}
+
+.center-text-content ul li{
+    color: black;
+}
+
+
+.pink{
+    color: rgb(241, 9, 171);
+    -WEBKIT-TEXT-STROKE-WIDTH: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+/* Style for body */
+body{
+    min-height: 100%;
+    min-width: 100%;
+    background: url(./surkhibindi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Header Styling */
+header{
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+header .logo{
+    height: 10%;
+    margin: 10px 0px;
+}
+
+head .logo img{
+    height: 10px;
+}
+
+.logo:nth-child(1)
+{
+    filter: brightness(1.9);
+}
+
+.logo-back a img, .logo-front a img
+{
+    height: 23vh;
+    width: 35vh;
+}
+
+header li{
+    list-style: none;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: aliceblue;
+}
+
+header li:nth-child(3){
+    font-family: sans-serif;
+}
+
+
+/* main Content styling */
+main{
+    margin-top: 30vh;
+    min-height: 100vh;
+}
+
+/* Styling of the 1st section */
+main section:nth-child(1){
+    min-height: 35vh;
+}
+
+main section:nth-child(1) div:nth-child(1), main section:nth-child(1) div:nth-child(2){
+    width: 40%;
+}
+
+
+main section:nth-child(1) div:nth-child(1) ul li{
+    font-size: 5em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+main section:nth-child(1) div:nth-child(2) ul li{
+    font-size: 5em;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: -2px;
+}
+
+
+main section:nth-child(1) div:nth-child(2) ul li:nth-child(1){
+    text-align: left;
+    padding-left: 70px;
+}
+
+main section:nth-child(1) div:nth-child(2) ul li:nth-child(2){
+    font-size: 10em;
+    text-align: center;
+    margin-left: 80px;
+    text-align: left;
+}
+
+main section:nth-child(1) div:nth-child(2) ul li:nth-child(2) sup{
+    font-size: 0.45em;
+    letter-spacing: 10px;
+}
+
+main section:nth-child(1) div:nth-child(2) ul li:nth-child(3){
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    font-size: 4.5em;
+}
+
+/* Styling 2nd Section */
+
+main section+section{
+    margin-top: 20vh;
+
+}
+
+main section+section div div{
+    text-align: center;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+main section+section div div span{
+    font-size: 13px;
+}
+
+main section+section div li{
+    font-size: 65px;
+    letter-spacing: 20px;
+    margin-left: 20px;
+}
+
+main section+section div+div{
+    word-spacing: -5px;
+    font-size: 24px;
+}
+
+main section+section div+div span{
+    font-size: 0.7em;
+    margin-right: 14px;
+}
+
+.punjabititle a{
+    margin-left: 45vh;
+}
+
+
+/* Footer Styling */
+
+footer{
+    margin-top: 30px;
+}
+
+footer ul li{
+    list-style: none;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: aliceblue;
+}
+
+footer ul li ul li{
+    display: inline;
+    margin-left: 5px;
+
+}
+
+
+.pink{
+   font-size: 3.5em;
+}
+
+footer ul li span{
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+
+.center-text-content ul{
+    margin-bottom: 88px;
+}
+
+.white ul p{
+    margin-left: 5vw;
+}
+
+
+/* Making a Transparent sheet on the Body so that upper content can seem bright */
+body::after{
+    content: "";
+    height: 181%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.footer-img{
+    height: 3vh;
+    width: 3vh;
+    color: aliceblue;
+    margin-left: 18ch;
+}
+.footerzeestudio{
+    margin-left: 5ch ;
+}
+
+.white{
+    color: rgba(255, 255, 255, 0.867);
+}
+
+.white ul{
+    position: relative;
+    left: 50vw;
+    font-size: 2em;
+}
+
+.white ul span{
+    font-size: 23px;
+}
