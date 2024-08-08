@@ -1,0 +1,1182 @@
+/* This is the CSS for Our WEB-DEV Project */
+/* Name =>         */
+/* StudentIds =>  */
+
+
+
+/* These are the utility as well as default properties of some of the elements and also We have Specified the Fonts of the Elements in it */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   a,
+   p,
+   li,
+   input {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+   }
+   
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+    font-family: "cinzel", sans-serif;
+    font-size: 1.8em;
+   }
+   
+   a {
+    color: black;
+    text-decoration: none;
+   }
+   
+   li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 5px;
+   }
+   
+   i {
+    margin-right: 10px;
+   }
+   
+   .i-hover:hover {
+    transition: all 0.2s ease;
+    color: #D59E3B;
+    transform: scale(1.5);
+   }
+   
+   .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .primary-btn {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 10px;
+    transition: all 0.2s ease;
+    border: 1px solid white;
+    color: #f8f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+   
+   .primary-btn:hover {
+    background-color: #f8f8f8;
+    color: #232323;
+   }
+   
+   
+   .btn-dark {
+    color: #f8f8f8;
+    background-color: #232323;
+   }
+   
+   .btn-dark:hover {
+    background-color: #d8d3d3;
+    color: #232323;
+   }
+   
+   
+   
+   body {
+    background-color: #FAF5F0;
+   }
+   
+   *::selection {
+    background-color: #1e1e1e;
+    color: #d8d3d3;
+   }
+   
+   
+   
+   /* This is the Styling of the Header of the Webpage
+      here We have used Flex display to shape the Items and also we have used hover effects to the List items which is Anchor tags 
+      used to navigate between the Sites
+   */
+   header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    background-color: #f8f8f8;
+    padding: 0px 20px;
+    position: fixed;
+    transition: all 0.2s ease;
+    z-index: 100;
+   }
+   
+   .logo-container {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+   }
+   
+   .logo-container a img {
+    height: auto;
+    width: 200px;
+   }
+   
+   footer .logo-container a img:hover,
+   header .logo-container a img:hover {
+    filter: drop-shadow(1px 1px 5px #f8f8f8);
+    filter: brightness(3);
+    transition: all 0.5s ease-out;
+   }
+   
+   
+   header nav {
+    margin: auto;
+   }
+   
+   header nav menu li a {
+    color: #0C0C0C;
+    font-size: 1.6em;
+    font-family: "Flamenco", "poppins";
+   }
+   
+   header nav menu li :hover {
+    transition: all 0.1s ease-out;
+    color: #D59E3B;
+    padding-bottom: 4px;
+    font-weight: 500;
+    border-bottom: 2px solid #D59E3B;
+   }
+   
+   
+   .header-scrolled {
+    transition: all 0.5s ease;
+    height: 133px;
+    background-color: #0C0C0C;
+   }
+   
+   .header-scrolled-anchor {
+    color: #f8f8f8;
+   }
+   
+   .header-scrolled-img {
+    filter: brightness(3);
+   }
+   
+   
+   .menu-mobile {
+    display: none;
+   }
+   
+   
+   /* this is the  MastHead Styling of the HOME page
+      in the masthead we have given the Background image to the container, and also we have used padding as well margin
+      property to shape the Text content of the masthead.
+   */
+   
+   .masthead-section {
+    padding-top: 150px;
+   }
+   
+   section .my-masthead {
+    min-height: 70vh;
+    background-image: url("./Photos/bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    color: #f8f8f8;
+   }
+   
+   section .my-masthead .masthead-content {
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 43%;
+    background-color: #232323c2;
+    padding: 1.82em;
+   }
+   
+   
+   /* Main Styling */
+   main {
+   
+    min-height: 70vh;
+    background-color: #f8f8f8;
+   }
+   
+   /* Shopping Section of the HOME page
+      in this We have used shadows, hover padding properties to give desired shapes to the Elements.
+   */
+   main .shop {
+    padding: 5% 10%;
+   }
+   
+   .shop h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 2.5em;
+   }
+   
+   .shop .shop-elements ul li {
+    width: 33%;
+    padding: 2px 5px;
+   }
+   
+   .shop .shop-elements ul li img {
+    width: 100%;
+    border-radius: 2px;
+   }
+   
+   .shop .shop-elements ul li figure .summary-wrap {
+    padding: 0.7em 0.5em;
+   }
+   
+   .shop .shop-elements ul li figure .summary-wrap p {
+    display: block;
+    font-size: 1.7em;
+    margin-bottom: 0.3em;
+   }
+   
+   .shop .shop-elements ul li figure .summary-wrap span {
+    font-size: 1.12em;
+   }
+   
+   .shop .shop-elements ul li figure .summary-wrap .price-dashed {
+    color: #A5A5A5;
+    text-decoration: line-through;
+   }
+   
+   
+   .shop .shop-elements ul li figure .summary-wrap .price-non-dashed {
+    color: #4C4C4C;
+    font-weight: 600;
+   }
+   
+   .shop .shop-elements ul li img:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    overflow: hidden;
+    filter: brightness(1.2);
+    filter: contrast(1.4);
+    border: 1px solid #D59E3B;
+    border-radius: 5px;
+   }
+   
+   
+   .shop .shopnow-btn {
+    margin-top: 5px;
+    text-align: center;
+   }
+   
+   .shop .shopnow-btn a:hover {
+    box-shadow: 4px 4px 13px black;
+    border: 2px solid black;
+   }
+   
+   /* Benifits section in the main
+      We have used the padding, display as wekk as width, fontSize property to align the Items
+   */
+   main .benifits {
+    padding: 5% 0%;
+    display: flex;
+   }
+   
+   main .benifits div {
+    margin: 10px 20px;
+    width: 25%;
+   }
+   
+   main .benifits div i {
+    display: block;
+    font-size: 3.3em;
+    text-align: center;
+    margin-bottom: 15px;
+   }
+   
+   main .benifits div h6 {
+    text-align: center;
+    padding: 8px 0px;
+   }
+   
+   
+   /* Footer Styling 
+    In this We have used used margin, text-align as well as padding to shape the content  
+    Also we have used display flex to make it Vertically Aligned.
+    */
+   
+   footer {
+    background-color: #f8f8f8;
+   }
+   
+   footer .logo-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 85%;
+   }
+   
+   footer .logo-container div {
+    padding: 0 0 0 8%;
+   
+   }
+   
+   footer .logo-container a {
+    display: block;
+    text-align: center;
+   }
+   
+   
+   footer .logo-container div h2 {
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   
+   
+   footer .logo-container div ul li {
+    color: #464443;
+    padding: 5px 10px;
+    display: block;
+    text-align: left;
+   }
+   
+   footer div ul li :hover {
+    transition: all 0.1s ease-out;
+    color: #D59E3B;
+   }
+   
+   footer hr {
+    margin: 20px 0px;
+    color: #464443;
+   }
+   
+   footer p {
+    text-align: center;
+    color: #464443;
+    padding-bottom: 10px;
+   
+   }
+   
+   
+   
+   /* This is the About Us Page Styling In which we have Used Padding , Margin to Shape the Content
+   and also we have used after psedu element to make a horizontal line aftet the content.
+   */
+   .aboutUs .my-masthead {
+    background: url(./Photos/about-masthead.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   }
+   
+   .aboutUs .my-masthead .masthead-content {
+    margin-top: 5%;
+    margin-left: 30%;
+    text-align: center;
+   }
+   
+   .aboutUs .my-masthead .masthead-content p {
+    text-align: left;
+   }
+   
+   .aboutUs-main {
+    padding: 2% 10%;
+   }
+   
+   .aboutUs-main section {
+    margin: 30px 10px;
+    text-align: center;
+   }
+   
+   .aboutUs-main .section-1 {
+    display: flex;
+   }
+   
+   .aboutUs-main .section-1 h3 {
+    text-align: center;
+   }
+   
+   .section-1 div {
+    width: 50%;
+    padding: 10px;
+    margin-top: 3em;
+    text-align: left;
+    margin-right: 30px;
+    border: 2px solid black;
+   }
+   
+   .aboutUs-main::after {
+    content: "";
+    padding: 10px;
+    border-bottom: 2px solid #232323;
+    position: absolute;
+    width: 80%;
+   }
+   
+   
+   
+   /* This is the Contact US page Styling 
+   in this we have used flexbox to align the Items and Also we Have made Contact-us page and has done its Styling
+   
+   */
+
+   .contact-masthead {
+    padding-top: 200px;
+   }
+   
+   .contact-masthead .my-masthead {
+    background-image: url(./Photos/contact-masthead.jpg);
+   }
+   
+   .contact-masthead .my-masthead .masthead-content {
+    width: 60%;
+    margin-top: 4%;
+   }
+   
+   
+   .contactUS-main {
+    display: flex;
+    padding: 2% 10%;
+   }
+   
+   .contactUS-main section {
+    width: 40%;
+    padding: 20px;
+   }
+   
+   .contactUS-main section {
+    padding: 40px 20px;
+   }
+   
+   .contactUS-main section+section {
+    width: 60%;
+    padding: 40px 20px;
+    background-color: #705d5d0f;
+    color: black;
+    border-radius: 20px;
+   }
+   
+   
+   .contactUS-main .left-section-first-content {
+    margin-bottom: 20px;
+   }
+   
+   .contactUS-main section h2 {
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid black;
+   }
+   
+   
+   
+   .contactUS-main .left-section-content {
+    padding: 16px 5px;
+   }
+   
+   
+   /* Contact page form Styling */
+   
+   .contactUS-main .right-section div {
+    margin-bottom: 20px;
+   }
+   
+   
+   .contactUS-main .right-section label {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 0.4em;
+   }
+   
+   
+   .contactUS-main .right-section input,
+   textarea {
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+   }
+   
+   .contactUS-main .right-section input:focus,
+   .contactUS-main .right-section textarea:focus {
+    box-shadow: 5px 5px 10px #1e1e1e;
+   }
+   
+   .contactUS-main textarea {
+    resize: none;
+    width: 100%;
+    height: 400px;
+   }
+   
+   .contactUS-main .right-section button {
+    background-color: #1e1e1e;
+    display: block;
+   }
+   
+   .contactUS-main .right-section button:hover {
+    background-color: #f8f8f8;
+    color: #1e1e1e;
+   }
+   
+   /* Shop with us Page styling
+      In the shopPage we have used CSS grid to set up the Items
+   */
+   
+   
+   
+   .shop-masthead {
+    padding: 15% 5% 3%;
+   
+   }
+   
+   .shop-masthead h1 {
+    padding: 5px;
+    font-size: 3em;
+    background-color: transparent;
+    border-bottom: 3px solid #F0F3F7;
+   }
+   
+   .grid-container {
+    padding: 1% 4% 4% 6%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-content: center;
+   }
+   
+   
+   .grid-container div {
+    width: 100%;
+   }
+   
+   .grid-container figure img {
+    border-radius: 5px;
+    height: 414px;
+   }
+   
+   .grid-container figure figcaption .catagory {
+    display: block;
+    color: #989D9D;
+    font-size: 1.2em;
+    padding: 7px 2px;
+   }
+   
+   
+   .grid-container figure figcaption a {
+    font-size: 2em;
+    font-family: "cinzel", sans-serif;
+    font-weight: 700;
+    z-index: 3;
+   }
+   
+   .grid-container figure figcaption a:hover {
+    color: #D59E3B;
+    transition: all .2s ease;
+   }
+   
+   .grid-container figure figcaption div i {
+    margin-right: 0px;
+   }
+   
+   
+   .grid-container figure figcaption span {
+    font-size: 1.2em;
+   }
+   
+   .grid-container figure figcaption span .price-dashed {
+    color: #A0A5A4;
+    padding-right: 5px 10px;
+    text-decoration: line-through;
+   }
+   
+   .grid-container figure figcaption span .price-non-dashed {
+    color: #424B4A;
+    font-weight: 700;
+   }
+   
+   
+   
+   /* The Below Styling is the CSS for the Products Page */
+   /* Product Page */
+   .product-page-main {
+    padding: 160px 7%;
+    text-align: justify;
+   }
+   .singleProduct-mainContent {
+    padding: 60px 0px;
+   }
+   
+   
+   
+   
+   /* This is the Styling for the Product Images */
+   
+   .singleProduct-mainContent .image-container {
+    width: 100%;
+    gap: 2%;
+   }
+   
+   .singleProduct-mainContent .image-container img {
+    width: 33%;
+   }
+   
+   .singleProduct-mainContent .image-container img {
+    border-radius: 5px;
+   }
+   
+   
+   
+   /* This is the Styling for the Product Catagory */
+   
+   
+   .product-page-main .singleProduct-mainContent .description-review .product-catagory {
+    font-size: 1.8em;
+    font-style: italic;
+    color: rgba(22, 21, 21, 0.752);
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review h1 {
+    padding: 0.2em 0.01em;
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .price .span-price {
+    font-size: 1.9rem;
+    font-weight: 700;
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .price .span-shipping {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(22, 21, 21, 0.752);
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .product-details p {
+    color: #161515c0;
+    padding: 0.2em 0.2em;
+   }
+   
+   
+   .product-page-main .singleProduct-mainContent .description-review .addToCart .quantity-btns {
+    display: flex;
+    width: 25%;
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .addToCart .quantity-btns>* {
+    text-wrap: balance;
+    text-align: center;
+    display: block;
+    height: 35px;
+    width: 35px;
+    padding: 6px 6px 5px 3px;
+    border: 1.25px solid #161515c0;
+    margin-bottom: 5px;
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .addToCart .quantity-btns :hover,
+   .product-page-main .singleProduct-mainContent .description-review .addToCart .add-to-cart-btn a:hover {
+    background: #8080802b;
+    border-radius: 2px;
+    cursor: pointer;
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .addToCart .add-to-cart-btn a {
+    display: inline-block;
+    border: 2px solid #4b4b4b2b;
+    color: #161515c0;
+    text-align: center;
+    padding: 0.5em 0.5em;
+   }
+   
+   .product-page-main .singleProduct-mainContent .description-review .product-extras li {
+    display: block;
+   }
+   
+   .product-page-main .accordion div .accodion-para {
+    display: none;
+   }
+   
+   .product-page-main .accordion .active a {
+    color: #D59E3B;
+   }
+   
+   .product-page-main .accordion .active .accodion-para {
+    display: block;
+   }
+   
+   .product-page-main .accordion div a {
+    display: block;
+    margin-top: 8px;
+    padding: 15px;
+    border-radius: 3px;
+    font-weight: 900;
+   }
+   
+   .product-page-main .accordion div a:hover {
+    background-color: #1e1e1e10;
+    cursor: pointer;
+   }
+   
+   
+   .product-page-main .accordion .accordion-item .accodion-para {
+    padding-left: 2em;
+    padding-top: 0.5em;
+   }
+   
+   
+   
+   
+   
+   .product-page-main .accordion .accordion-item .contact-para p,
+   .product-page-main .accordion .accordion-item .contact-para .review-from span {
+    font-size: 1.4em;
+    text-align: left;
+    padding: 10px 0;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from span {
+    font-size: 1.2em;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from {
+    padding: 10px;
+    border: 1px solid #989D9D;
+   }
+   
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .arrordion-review-form p {
+    font-size: 0.9em;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .arrordion-review-form label {
+    display: block;
+    padding: 1px 0px;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .arrordion-review-form textarea {
+    height: 150px;
+    font-size: 1.2em;
+    resize: none;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .review-details-text div {
+    margin: 4px 0px;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .review-details-text div input {
+    font-size: 1em;
+    padding: 0px 4px;
+    height: 2em;
+   }
+   
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .review-details-text div input[type="text"],
+   .product-page-main .accordion .accordion-item .contact-para .review-from .review-details-text div input[type="email"] {
+    width: 46%;
+   }
+   
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .arrordion-review-form .review-ack {
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+   }
+   
+   .product-page-main .accordion .accordion-item .contact-para .review-from .arrordion-review-form label {
+    padding: 0 5px;
+   }
+   
+   /* Modal for the Product Page */
+   .modal {
+    height: 80vh;
+    width: 80vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    background-color: #424b4a84;
+    color: #f8f8f8;
+    position: fixed;
+    left: 10%;
+    top: -90%;
+    transition: all 0.4s ease;
+   }
+   
+   .modal-active {
+    top: 10%;
+    left: 10vw;
+    z-index: 500;
+   }
+   
+   
+   /* +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= */
+   
+   /* The Responsive Design */
+   
+   /* This is the Code for the Extra Large Screens, IN this code we have increased the font size and also increased the width as 
+    well as height of the images, buttons and divs
+   */
+   
+   @media screen and (min-width:2100px) {
+   
+    .product-page-main,
+    .contactUS-main,
+    .aboutUs-main,
+    .benifits,
+    section .my-masthead .masthead-content {
+    font-size: 1.8em;
+    }
+   
+    .grid-container {
+    font-size: 1.4em;
+    }
+   
+    .grid-container figure img {
+    height: 743px;
+    }
+   
+    .product-page-main .singleProduct-mainContent .description-review .addToCart .quantity-btns>* {
+    height: 3.3rem;
+    width: 1.3em;
+    }
+   
+    .product-page-main .singleProduct-mainContent div {
+    width: 100%;
+    }
+   
+    .product-images .image-container img {
+    width: 80%;
+    }
+   
+   }
+   
+   /* 
+    This the code for the small laptops in this we just have shifted the width of the Image
+   */
+   
+   @media screen and (max-width: 927px) {
+    .singleProduct-mainContent .image-container img {
+    width: 48.8%;
+    }
+   }
+   
+   /* This is the responsive code for the Tablet
+    In this We have changed some of the dimensions as well as made flexbox to block, align some texts to center as well as 
+    increased width of some of the elements so that the page do not seems empty.
+   */
+   
+   @media screen and (max-width: 768px) {
+   
+    section .my-masthead .masthead-content {
+    width: 50%;
+    }
+   
+    .aboutUs .my-masthead .masthead-content {
+    margin-top: 5%;
+    text-align: center;
+    margin-right: 2%;
+    width: auto;
+    }
+   
+    .aboutUs .my-masthead {
+    background-position: top;
+    }
+   
+    .aboutUs .my-masthead .masthead-content {
+    margin-left: 2%;
+    }
+   
+    .aboutUs-main .section-1 div {
+    width: 100%;
+    border: none;
+    }
+   
+    .aboutUs-main .section-1 {
+    flex-wrap: wrap;
+    }
+   
+   
+    .grid-container {
+    grid-template-columns: auto auto;
+    }
+   
+   
+    .shop .shop-elements ul li {
+    width: 84%;
+    padding: 2px 5px;
+    display: block;
+    margin: auto;
+    }
+   
+    main .benifits div {
+    margin: 12px;
+    width: 46vw;
+    }
+   
+    main .benifits {
+    flex-wrap: wrap;
+    }
+   
+    .singleProduct-mainContent .image-container img {
+    width: 48%;
+    }
+   
+   
+    .contactUS-main {
+    display: block;
+    }
+   
+    .contactUS-main section,
+    .contactUS-main section+section {
+    width: 100%;
+    }
+   
+    .shop-masthead {
+    padding: 21% 5% 3%;
+    }
+   
+    .singleProduct-mainContent {
+    display: block;
+    margin: auto;
+    }
+   
+    .singleProduct-mainContent .product-images {
+    min-height: 100vh;
+    margin: auto;
+    }
+   
+    .product-page-main .singleProduct-mainContent div {
+    width: 100%;
+    margin: auto;
+    }
+   
+    .product-page-main .singleProduct-mainContent .add-to-card {
+    width: 100%;
+    display: block;
+    margin: auto;
+    }
+   
+   
+    .product-page-main {
+    padding: 100px 6px 7%;
+    text-align: justify;
+    }
+   
+    /* Footer */
+   
+    footer .logo-container {
+    display: block;
+   
+    }
+   
+    footer .logo-container div {
+    padding: 20px 0px;
+    text-align: center;
+    }
+   
+   
+   }
+   
+   /* STYLING WHEN THE WIDTH IS 576PX 
+   
+    in this we have made the flexbox to div so that it 
+    can show the data in vertical format
+    and also have changed the padding of the content
+   
+   */
+   
+   @media screen and (max-width: 576px) {
+    section .my-masthead .masthead-content {
+    width: 97%;
+    }
+   
+    main .benifits {
+    display: block;
+    }
+   
+    main .benifits div {
+    width: 97%;
+    margin: auto;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #A0A5A4;
+    }
+   
+    .grid-container {
+    grid-template-columns: auto;
+    }
+   
+    .aboutUs-main {
+    padding: 2% 2%;
+    }
+   
+    .section-1 div {
+    margin-right: 0;
+    }
+   
+    .contact-masthead .my-masthead .masthead-content {
+    width: 98%;
+    }
+   
+    .product-page-main .singleProduct-mainContent .description-review .addToCart .add-to-cart-btn a {
+    display: block;
+    margin: auto;
+    width: 70%;
+    }
+   
+    .shop-masthead {
+    padding: 30% 5% 3%;
+    text-align: center;
+    }
+   
+   }
+   
+   /* Styling for the Small Screens which is less than 540px */
+   /*
+    In this we have made padding minimum for the webpage elements and also we have also decreased the font size of the elements
+    and also the main thing in this is we have activated the hamburgur menu in it.
+   */
+   
+   @media screen and (max-width : 540px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    font-size: 1.5em;
+    }
+   
+    header {
+    display: block;
+    height: 100px;
+    }
+   
+    .desktop {
+    display: none;
+    }
+   
+    header .logo-container {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 40%;
+    margin: 0;
+    }
+   
+    header .logo-container a img {
+    width: 160px;
+    }
+   
+    header .menu-mobile {
+    display: block;
+    width: 60%;
+    float: right;
+    padding-top: 20px;
+    }
+   
+    header .menu-mobile li {
+    display: block;
+    }
+   
+    .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 5;
+    }
+   
+    .menuToggle span {
+    position: relative;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #232323;
+    border-radius: 3px;
+    z-index: 3;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+   
+    .menuToggle span:nth-child(3) {
+    width: 23px;
+    }
+   
+   
+    .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+    }
+   
+    .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+    }
+   
+    .menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 8px);
+    background-color: #232323;
+   
+    }
+   
+    .menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+   
+    .menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+   
+    .menuToggle input:checked~.menuItem {
+    transform: none;
+    left: 0px;
+    }
+   
+    .menuItem {
+    position: absolute;
+    height: 400px;
+    width: 200px;
+    padding: 68px 11px;
+    background-color: #ededed;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transition: all 0.5s linear;
+    left: -200px;
+    top: 0px;
+    border-radius: 0px 20px 20px 20px;
+    }
+   
+    .grid-container {
+    grid-template-columns: auto;
+    }
+   
+    .singleProduct-mainContent .image-container img {
+    width: 90vw;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    }
+   
+    .contactUS-main {
+    padding: 2% 2%;
+    }
+   
+    .grid-container {
+    padding: 1% 4% 4% 0.7%;
+    }
+   
+    .grid-container figure img {
+    border-radius: 5px;
+    height: 350px;
+    }
+
+   }

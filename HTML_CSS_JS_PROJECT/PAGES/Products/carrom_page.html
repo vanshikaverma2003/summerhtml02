@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+   
+    <meta name="description" content="This is contact page of My website">
+    
+    <!-- Title of the Document -->
+    <title>Carrom | Product</title>
+    
+    <!-- The Script file of the Page -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="https://lamp.computerstudi.es/~Arshdeep200587637/HTML_CSS_JS_PROJECT/JS/script.js" defer></script>
+
+</head>
+<body>
+    <!-- this is the header of the webpage that will be injected through JS -->
+    <header id="header"></header>
+
+    <!-- Main content of the Webpage starts here! -->
+    <main class="product-page-main">
+
+        <!-- this is the structure for the Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <h3>Are you Sure to Buy the Item ?</h3>
+                <a href="#" class="primary-btn btn-dark button-1">YES</a>
+                <a href="#" class="primary-btn btn-dark button-2">NO</a>
+            </div>
+        </div>
+
+        <!-- This is the container that will have the information about the product -->
+        <section class="singleProduct-mainContent">
+
+            <!-- Product Images -->
+
+            <div class="image-container">
+                <img src="https://lamp.computerstudi.es/~Arshdeep200587637/HTML_CSS_JS_PROJECT/CSS/Photos/ProductPageImages/CARROM/carrom2.jpeg" alt="">
+                <img src="https://lamp.computerstudi.es/~Arshdeep200587637/HTML_CSS_JS_PROJECT/CSS/Photos/ProductPageImages/CARROM/carrom2a.jpg" alt="">
+                <img src="https://lamp.computerstudi.es/~Arshdeep200587637/HTML_CSS_JS_PROJECT/CSS/Photos/ProductPageImages/CARROM/carrom4.jpg" alt="">
+            </div>
+
+
+            <!-- this will contain the description of the webpage -->
+            <div class="description-review">
+                <span class="product-catagory">Board Games</span>
+                <h1>CARROM</h1>
+                <p class="price">
+                    <span class="span-price">$50</span>
+                    <span class="span-shipping">& Free Shipping</span>
+                </p>
+                <div class="product-details">
+                    <p>Experience the joy of traditional gaming with our Premium Carrom Board Set. Crafted with high-quality wood and a smooth playing surface, this set ensures precise shots and hours of fun. Ideal for family gatherings and friendly competitions, it’s a perfect addition to any game room.
+                    </p>
+                </div>
+                <div class="addToCart">
+                    <div class="quantity-btns">
+                        <a href="#">-</a>
+                        <span>1</span>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="add-to-cart-btn">
+                        <a class="add-to-card primary-btn">BUY</a>
+                    </div>
+                </div>
+
+                <div class="product-extras">
+                    <h6 class="extras-heading">Free shipping on orders over $50!</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i>No-Risk Money Back Gurantee!</li>
+                        <li><i class="fa-solid fa-circle-check"></i>No Hassle Refunds</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Secure Payments</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- Accordion of the webpage -->
+        <section class="accordion">
+            <h2>DESCRIPTION AND REVIEW</h2>
+            <div class="accordion-item">
+                <a class="desc-btn acc-header"><i class="fa-solid fa-plus"></i>Description</a>
+                <div class="accodion-para desc-para">
+                    <p>The Classic Carrom Board Set is designed to bring joy and excitement to your family gatherings and friendly competitions. Crafted from high-quality wood, this board features a smooth playing surface that ensures precise shots and a seamless gaming experience. Its durable construction guarantees long-lasting play, making it a reliable addition to any game room. Whether you’re a seasoned player or new to the game, the Classic Carrom Board Set offers endless hours of fun and entertainment for all ages. Perfect for creating memorable moments with family and friends, this set is a must-have for every game enthusiast.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="accordion-item active">
+
+                <a class="contact-btn acc-header"><i class="fa-solid fa-minus"></i>Reviews(0)</a>
+                <div class="accodion-para contact-para ">
+                    <p>There are no reviews yet.</p>
+                    <div class="review-from">
+                        <span class="review-from-title">Be the first to Review "Neon Games"</span>
+
+                        <form action="action.php" method="get" enctype="application/x-www-form-urlencoded"
+                            class="arrordion-review-form">
+                            <p>Your email address will not be published. Required feilds are Marked *</p>
+                            <div class="rating-div">
+                                <span>Your Rating * </span>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="review-details-text">
+                                <div>
+                                    <label for="review-from-textarea">Your review *</label>
+                                    <textarea id="review-from-textarea"></textarea>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <label for="review-name">Name</label>
+                                        <input type="text" id="review-name" required>
+                                    </div>
+                                    <div>
+                                        <label for="review-email">E-Mail</label>
+                                        <input type="email" id="review-email" required>
+                                    </div>
+                                </div>
+
+                                <div class="review-ack">
+                                    <input type="checkbox" id="review-ack-check">
+                                    <label for="review-ack-check">Save my name, emial, and website in this browser for
+                                        the next time I comment.</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="primary-btn btn-dark">SUBMIT</button>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- this is the footer of the webpage that will be injected through JS -->
+    <footer id="footer"></footer>
+
+</body>
+</html>
