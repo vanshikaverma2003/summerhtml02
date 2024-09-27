@@ -1,0 +1,133 @@
+
+  
+  /* Stying of herder which will contain logo of the Song */
+  
+  /* Giving body a background color matching to the Background color of the Poster of the Song */
+  body{
+    background-color: #1f1b24;
+    font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(./bg.jpeg);
+    background-size: contain;
+  }
+  
+  /* How the color of the Text would Behave if I select it */
+  a::selection,span::selection,p::selection{
+      background-color:#340128;
+      color: #6e0178;
+  }
+  
+  /* Styling of Header which I would make a flex container */
+
+  header {
+    text-align: center;
+    background-color: #6e0178;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+  }
+  
+  header div {
+    width: 25%;
+    margin-left: 40px;
+  }
+  
+  header div img {
+    height: 90px;
+    width: auto;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+  }
+  
+  /* Masthead Styling that will have the Heading name of the Song as well as the IFrame having the Video of the Song */
+  .masthead{
+    min-height: 70vh;
+  }
+  
+  /* Styling of Heading in Mast-head */
+  .masthead h1{
+    color: #ECDFCC;
+    height: 15vh;
+    padding-top: 10px;  
+    font-size: 2.53em;
+    text-align: center;
+    line-height: 0.4;
+    font-family: MeltFactory;
+  }
+  
+  .masthead h1 span{
+    padding-left: 0.1em;
+    color: #FA58B6;
+    font-size: 2.5em;
+    line-height: 1;
+  }
+  
+  /* Styling of inserted IFrame */
+  .masthead iframe{
+    width: 100%;
+    height: calc(100vh - 160px - 8vh);
+  }
+  
+  /* Song Lyrics Styling of the Website */
+  
+  .main{
+    background: url(../img/background.png);
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 2vh 5px;
+    text-align: justify;
+  }
+  
+  .main h2{
+    text-align: center;
+    font-size: 4em;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #6e0178;
+    letter-spacing: 5px;
+    
+
+  }
+  
+  .main div p{
+    color: #FFFFF0;
+    margin: 20px;
+    font-size: 1.5em;
+    letter-spacing: 1.4px;
+    word-spacing: 2px;
+    /* Giving a font-familt to the Paragraph */
+    font-family: paragraphFont1;
+  }
+  
+  
+  .p-reference{
+    font-family: Helvetica, Arial, sans-serif;
+     color: #dbb6ea;
+  }
+  
+  .main div p::first-line{
+    font-weight: 760;
+    font-size: 1.2em;
+  }
+  
+  .main div p::first-letter{
+    font-size: 1.7em;
+    font-family: Heading;
+    text-shadow: 2px 3px 6px #D89216;
+  }
+  
+  
+  /* Footer styling of the Web-Page */
+  footer{
+    background-color: #6e0178;
+    color: #dbb6ea;
+    padding: 5px;
+  }
+  
+  footer p{
+    text-align: center;
+  }
+  
+  
