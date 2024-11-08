@@ -1,0 +1,48 @@
+/* Styles for the body element */
+body {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light gray background color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the SVG button */
+.button-container {
+    perspective: 1000px; /* Add perspective for a 3D effect during transformations */
+}
+
+/* Styles for the SVG button */
+.svg-button {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transformations */
+}
+
+/* Background of the button */
+.button-background {
+    fill: #6e0000; /* Initial button color (dark red) */
+    transition: fill 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Text styles for the button */
+.button-text {
+    fill: white; /* Text color (white) */
+    font-size: 20px; /* Font size for the text */
+    font-family: Arial, sans-serif; /* Font family for the text */
+}
+
+/* Hover effect for the SVG button */
+.svg-button:hover {
+    transform: scale(1.05); /* Slightly scale up the button when hovered */
+}
+
+/* Change background color on hover */
+.svg-button:hover .button-background {
+    fill: #7c0202; /* Change color to a lighter red on hover */
+}
+
+/* Active state for the button (when clicked) */
+.svg-button:active {
+    transform: scale(0.95); /* Scale down the button when pressed */
+}
